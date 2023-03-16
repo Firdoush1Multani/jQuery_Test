@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Select Element by ID</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    // Highlight element with id mark
+    $("#mark").css({
+      "color": "white",
+      "background-color": "#98bf21",
+      "font-family": "times new roman",
+      "font-size": "20px",
+      "padding": "5px",
+      "width":"20%",
+      "border-style": "outset",
+      "border-color": "black",
+      "border-width": "7px"
+    });
+    $("#mark1").css({
+        "background-color":"pink",
+        "font-family":"century schoolbook",
+        //"margin-left":"50px",
+        "width":"20%",
+        "border":"2px dotted blue"
+        });
+    $("#mark2").css({"background": "lightblue","width":"20%",});
+    $('input[type="text"]').css("background", "cyan");
+    $("tr:odd").css("background", "gray");
+    $("tr:even").css("background", "pink");
+
+});
+</script> 
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Firdoush</td>
+                <td>firdoush@mail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Avani</td>
+                <td>Avani@mail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Pooja</td>
+                <td>Pooja@mail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <p id="mark">You are Awsome</p>
+    <p id="mark1">You are Brillant </p>
+    <p id="mark2">I am Extra Line</p>
+
+    <form>
+        <label>Name: <input type="text"></label>
+    </form>
+</body>
+</html>
+
+
+
+<!-- $(document).ready(function(){
+    // Highlight table rows appearing at odd places
+    $("tr:odd").css("background", "yellow");
+  
+    // Highlight table rows appearing at even places
+    $("tr:even").css("background", "orange");
+  
+    // Highlight first paragraph element
+    $("p:first").css("background", "red");
+  
+    // Highlight last paragraph element
+    $("p:last").css("background", "green");
+  
+    // Highlight all input elements with type text inside a form
+    $("form :text").css("background", "purple");
+  
+    // Highlight all input elements with type password inside a form
+    $("form :password").css("background", "blue");
+  
+    // Highlight all input elements with type submit inside a form
+    $("form :submit").css("background", "violet");
+}); -->
