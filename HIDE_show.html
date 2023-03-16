@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Example of jQuery Show Hide Effects</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 5px;
+        background: #addff6;
+        width:20%;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    // Hide displayed paragraphs
+    $(".hide-btn").click(function(){
+        $("p.normal").hide();
+        $("p.fast").hide("fast");
+        $("p.slow").hide("slow");
+        $("p.very-fast").hide(50);
+        $("p.very-slow").hide(100);
+    });
+    
+    // Show hidden paragraphs
+    $(".show-btn").click(function(){
+        $("p.normal").show();
+        $("p.fast").show("fast");
+        $("p.slow").show("slow");
+        $("p.very-fast").show(50);
+        $("p.very-slow").show(100);
+    });
+});
+</script>
+</head>
+<body>
+    <button type="button" class="hide-btn">Hide</button> 
+    <button type="button" class="show-btn">Show</button>
+    <p class="normal">Firdoush</p>
+    <p class="fast">Firdoush</p>
+    <p class="very-fast">Firdoush</p>
+    <p class="very-slow">Firdoush</p>
+    <p class="slow">Firdoush</p>
+    <p>Multani</p>
+</body>
+</html>
